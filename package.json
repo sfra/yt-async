@@ -1,0 +1,27 @@
+{
+  "name": "yt_list",
+  "version": "0.0.0",
+  "description": "Download lists from youtube, using youtube-dl",
+  "main": "run.js",
+  "scripts": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "sfra:sfra/yt-async.git"
+  },
+  "keywords": [
+    "youtube"
+  ],
+  "author": "Szymon Frankowski",
+  "license": "GNU GPL",
+
+  "dependencies": {
+        "https": "*",
+        "cheerio": "^0.19.0",
+        "optimist": "^0.6.1"
+    },
+
+    "devDependencies": {
+    }
+
+}
