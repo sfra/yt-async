@@ -14,7 +14,9 @@
   "author": "Szymon Frankowski",
   "license": "GNU GPL",
   "dependencies": {
+    "cli-frames": "^2.2.8",
     "crawler": "^1.2.0",
+    "download-file": "^0.1.5",
     "optimist": "^0.6.1"
   },
   "devDependencies": {}

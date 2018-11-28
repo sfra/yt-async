@@ -8,10 +8,10 @@ const exec = require('child_process').exec,
 
 
 
-  console.log('[[[[[[[[[[[[[[[[[[[[');
-    console.log(`cd ${dir} && youtube-dl https://www.youtube.com${url}`);
+console.log('[[[[[[[[[[[[[[[[[[[[');
+console.log(`cd ${dir} && youtube-dl https://www.youtube.com${url}`);
 let child = exec(`cd ${dir} && youtube-dl https://www.youtube.com${url}`);
-    console.log(']]]]]]]]]]]]]]]]]]]]');
+console.log(']]]]]]]]]]]]]]]]]]]]');
 
 
 child.stdout.pipe(process.stdout);
