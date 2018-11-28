@@ -5,8 +5,8 @@ var http = require('https'),
     argv = require('optimist').argv,
     getList = require('./libs/getList').getList;
 
-//node run.js -F --ytl-u PLSPScJcnp4W6lC0vME0UuCDTQ4W2h5cg9
-
+// usage
+// node run.js --ytl-d downloaded/ --ytl-u "https://www.youtube.com/watch?v=zLpnbYAl5mI&list=PLvXmarOi5xICCQmOhNIoGiOPwbO768wn_"
 
 
 

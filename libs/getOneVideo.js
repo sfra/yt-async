@@ -1,20 +1,18 @@
 #!/usr/bin/env node
 
-var exec = require('child_process').exec,
+const exec = require('child_process').exec,
     argv = require('optimist').argv,
-    child,
     dir = argv.d,
     url = argv.u,
-    F = argv.F,
-    paramsYTLString = argv.paramsYTLString;
+    F = argv.F;
 
 
-if (F) {
-    child = exec('youtube-dl -F ' + url + '| less', function (data) {});
-} else {
-    console.log('cd ' + dir + ' && youtube-dl ' + url + ' | less');
-    child = exec('cd ' + dir + ' && youtube-dl ' + url + ' | less');
-}
+
+  console.log('[[[[[[[[[[[[[[[[[[[[');
+    console.log(`cd ${dir} && youtube-dl https://www.youtube.com${url}`);
+let child = exec(`cd ${dir} && youtube-dl https://www.youtube.com${url}`);
+    console.log(']]]]]]]]]]]]]]]]]]]]');
+
 
 child.stdout.pipe(process.stdout);
 
